@@ -1,4 +1,13 @@
+import memesData from "../memesData.jsx";
+
 export default function Meme() {
+
+    function getMemeImage() {
+        const memesArray = memesData.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        console.log(randomNumber)
+    }
+
   return (
     <main>
       <div className="form">
