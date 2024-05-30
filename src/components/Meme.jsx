@@ -1,6 +1,7 @@
 import memesData from "../memesData.jsx";
 
 export default function Meme() {
+    const [memeImage, setMemeImage] = React.useState("")
 
     function getMemeImage() {
         const memesArray = memesData.data.memes
