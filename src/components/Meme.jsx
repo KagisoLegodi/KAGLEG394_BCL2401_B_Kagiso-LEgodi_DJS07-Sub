@@ -16,13 +16,11 @@ export default function Meme() {
     }, []); // Empty dependency array ensures this runs only once on mount
 
     function getMemeImage() {
-        const memesArray = allMemeImages.data.memes
-        const randomNumber = Math.floor(Math.random() * memesArray.length)
-        const url = memesArray[randomNumber].url
-        setMeme(prevMeme => ({
+        const randomIndex = Math.floor(Math.random() * allMemes.length);
+        setMeme((prevMeme) => ({
             ...prevMeme,
-            randomImage: url
-        }))
+            randomImage: allMemes[randomIndex].url,
+        }));
     }
 
     function handleChange(event) {
