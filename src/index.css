@@ -59,6 +59,12 @@ main {
   cursor: pointer;
 }
 
+.meme-container {
+  display: flex; /* Enable flexbox for the main container */
+  flex-direction: column; /* Stack form and meme vertically */
+  align-items: center; /* Center children horizontally */
+}
+
 .meme {
   position: relative;
 }
