@@ -1,5 +1,4 @@
-import React from "react"
-import memesData from "../memesData.jsx";
+import { useState, useEffect } from "react";
 
 export default function Meme() {
     //const [memeImage, setMemeImage] = React.useState("http://i.imgflip.com/1bij.jpg")
