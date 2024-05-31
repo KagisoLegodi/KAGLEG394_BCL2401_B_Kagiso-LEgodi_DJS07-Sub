@@ -29,7 +29,7 @@ export default function Meme() {
     }
 
   return (
-    <main>
+    <main className="meme-container">
       <div className="form">
         <label htmlFor="top-text">
           Top text
@@ -38,6 +38,9 @@ export default function Meme() {
             type="text"
             placeholder="Shut up"
             className="form--input"
+            name="topText"
+            value={meme.topText}
+            onChange={handleChange}
           />
         </label>
         <label htmlFor="bottom-text">
