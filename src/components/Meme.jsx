@@ -31,10 +31,10 @@ export default function Meme() {
         }));
     }
 
-  return (
-    <main className="meme-container">
-      <div className="form">
-        <label htmlFor="top-text">
+    return (
+        <main className="meme-container"> 
+            <div className="form">
+            <label htmlFor="top-text">
           Top text
           <input
             id="top-text"
