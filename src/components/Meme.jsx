@@ -50,13 +50,20 @@ export default function Meme() {
             type="text"
             placeholder="and take my money"
             className="form--input"
+            name="bottomText"
+            value={meme.bottomText}
+            onChange={handleChange}
           />
         </label>
         <button className="form--button"
         onClick={getMemeImage}
         >Get a new meme image 🖼</button>
       </div>
-      <img src={meme.randomImage} className="meme--image"/>
+      <div className="meme">
+                <img src={meme.randomImage} alt="Meme" className="meme--image" />
+                <h2 className="meme--text top">{meme.topText}</h2>
+                <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
     </main>
   );
 }
