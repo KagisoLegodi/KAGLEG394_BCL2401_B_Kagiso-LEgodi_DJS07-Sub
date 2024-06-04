@@ -35,11 +35,10 @@ export default function Meme() {
         <main className="meme-container"> 
             <div className="form">
             <label htmlFor="top-text">
-          Top text
           <input
             id="top-text"
             type="text"
-            placeholder="Shut up"
+            placeholder="Top Text"
             className="form--input"
             name="topText"
             value={meme.topText}
@@ -47,11 +46,10 @@ export default function Meme() {
           />
         </label>
         <label htmlFor="bottom-text">
-          Bottom text
           <input
             id="bottom-text"
             type="text"
-            placeholder="and take my money"
+            placeholder="Bottom text"
             className="form--input"
             name="bottomText"
             value={meme.bottomText}
